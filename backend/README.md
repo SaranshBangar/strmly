@@ -1,4 +1,4 @@
-# STRMLY Backend API
+# [STRMLY Backend API](https://strmly.onrender.com)
 
 A mini backend application for video sharing with user authentication, video upload to Cloudinary, and public video feed.
 
