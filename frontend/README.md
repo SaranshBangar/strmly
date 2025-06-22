@@ -1,4 +1,4 @@
-# Strmly Frontend
+# [STRMLY Frontend](https://strmly-saransh-bangar.vercel.app/)
 
 A modern React.js video sharing platform built with TypeScript, Tailwind CSS, and shadcn/ui components.
 
@@ -144,18 +144,3 @@ The frontend connects to the backend through a custom API layer:
 - **Video API**: Upload, list, get by ID, recommended
 - **Error Handling**: Consistent error messages and retry logic
 - **Token Management**: Automatic token inclusion in requests
-
-## 🎯 Future Enhancements
-
-- Video comments and likes
-- User following/followers
-- Video categories and tags
-- Advanced search and filters
-- Video analytics dashboard
-  ...reactDom.configs.recommended.rules,
-  },
-  })
-
-```
-
-```

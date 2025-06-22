@@ -109,7 +109,7 @@ export function SignupPage() {
 
           <div className="mt-6 text-center text-sm">
             Already have an account?{" "}
-            <Link to="/login" className="text-primary hover:underline">
+            <Link to="/login" className="text-primary underline">
               Sign in here
             </Link>
           </div>
