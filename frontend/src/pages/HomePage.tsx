@@ -50,16 +50,6 @@ export function HomePage() {
             </div>
           </div>
         )}
-
-        {!isAuthenticated && (
-          <div className="text-center bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-2xl font-bold mb-4">Ready to get started?</h3>
-            <p className="text-gray-600 mb-6">Join thousands of creators sharing their stories on Strmly</p>
-            <Link to="/signup">
-              <Button size="lg">Create Your Account</Button>
-            </Link>
-          </div>
-        )}
       </div>
     </div>
   );
