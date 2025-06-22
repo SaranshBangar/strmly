@@ -22,8 +22,8 @@ export function FeedPage() {
       setCurrentPage(response.data.pagination.currentPage);
       setTotalPages(response.data.pagination.totalPages);
       setTotalVideos(response.data.pagination.totalVideos);
-    } catch (error: any) {
-      setError(error.message || "Failed to load videos");
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : "Failed to load videos");
     } finally {
       setIsLoading(false);
     }
@@ -33,7 +33,7 @@ export function FeedPage() {
     try {
       const response = await videoAPI.getRecommendedVideos();
       setRecommendedVideos(response.data.videos);
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Failed to load recommended videos:", error);
     }
   };

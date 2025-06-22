@@ -39,8 +39,8 @@ export function SignupPage() {
     try {
       await signup(name, email, password);
       navigate("/feed");
-    } catch (error: any) {
-      setError(error.message || "Signup failed");
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : "Signup failed");
     } finally {
       setIsLoading(false);
     }

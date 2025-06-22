@@ -25,8 +25,12 @@ export function LoginPage() {
     try {
       await login(email, password);
       navigate("/feed");
-    } catch (error: any) {
-      setError(error.message || "Login failed");
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        setError(error.message);
+      } else {
+        setError("Login failed");
+      }
     } finally {
       setIsLoading(false);
     }

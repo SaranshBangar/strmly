@@ -77,8 +77,8 @@ export function UploadPage() {
       setTimeout(() => {
         navigate("/feed");
       }, 1000);
-    } catch (error: any) {
-      setError(error.message || "Upload failed");
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : "Upload failed");
       setUploadProgress(0);
     } finally {
       setIsLoading(false);
