@@ -1,4 +1,4 @@
-# STRMLY - Video Sharing Platform
+# [STRMLY - Video Sharing Platform](https://strmly-saransh-bangar.vercel.app/)
 
 A full-stack video sharing platform built for STRMLY internship assignment, featuring user authentication, video uploads, and a modern responsive interface.
 
